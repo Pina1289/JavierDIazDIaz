@@ -7,14 +7,15 @@
 <ion-content [fullscreen]="true">
   <ion-grid class="ion-align-items-center ion-justify-content-center">
     <ion-row class="ion-justify-content-center">
-      <ion-col>
         <div class="icono-centrado">
           <img src="./../../assets/icon/vecteezy_user-icon-on-transparent-background_19879186.png" alt="Foto Icono">
         </div>
+      <ion-col>
         <ion-title class="ion-text-center">
           Bienvenido Usuario
         </ion-title>
-
+      </ion-col>
+      <ion-col>
         <ion-card-content>
           <form [formGroup]="formulario" (submit)="validarFormulario()">
             <ion-card>
@@ -51,7 +52,7 @@
                   <ion-text *ngIf="!cargando_bloqueo">
                     Iniciar sesión
                   </ion-text>
-                  <ion-spinner *ngIf="cargando_bloqueo" name="circular"></ion-spinner>
+                  <ion-spinner *ngIf="cargando_bloqueo"></ion-spinner>
                 </ion-button>
               </ion-col>
             </ion-row>
