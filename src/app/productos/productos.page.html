@@ -19,13 +19,15 @@
                 <img alt="" [src]="producto.thumbnail" />
               </ion-avatar>
               <ion-label>
-                <h2 class="ion-text-wrap ion-text-bold">{{ producto.title }}</h2>
-                <p class="ion-text-color-primary ion-text-medium" style="color: blue;">
-                  ${{ producto.price }}
-                </p>
-                <p class="ion-text-color-success ion-text-small" style="color: green;">
-                  {{ producto.discountPercentage }} %
-                </p>
+                <ion-text color="dark">
+                  <h2 class="ion-text-wrap ion-text-bold">{{ producto.title }}</h2>
+                </ion-text>
+                <ion-text color="primary">
+                  <p>${{ producto.price }}</p>
+                </ion-text>
+                <ion-text color="success">
+                  <p>{{ producto.discountPercentage }} %</p>
+                </ion-text>
               </ion-label>
               <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
             </ion-item>

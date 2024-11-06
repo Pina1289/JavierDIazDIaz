@@ -31,18 +31,12 @@ export class AuthService {
       'Content-type': 'application/json'
     }
   })
+  
   .subscribe(resultado => {
     this.usuarioLogeado = resultado;
     this.accessToken = resultado.accessToken;
     console.log(resultado);
     this.router.navigate(['/', 'productos'])
   });
-  }
-
-  public cerrarSesion(){
-    if(this.usuarioLogeado){
-      this.usuarioLogeado = null;
-      this.accessToken = null;
-    }
   }
 }

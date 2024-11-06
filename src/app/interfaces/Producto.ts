@@ -9,5 +9,5 @@ export interface Producto {
     brand: string;
     thumbnail: string;
     images: string;
-  }
+}
   

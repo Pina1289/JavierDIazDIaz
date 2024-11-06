@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProductosService } from './../servicios/producto/productos.service'
+import { ProductosService } from './../servicios/producto/productos.service';
 import { Producto } from './../interfaces/Producto';
 import { ViewWillEnter, ViewDidLeave } from '@ionic/angular';
 import { Subscription } from 'rxjs';
